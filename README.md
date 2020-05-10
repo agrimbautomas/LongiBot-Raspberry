@@ -1,4 +1,5 @@
 # Run setup script
+sudo bash ./sudo-setup.sh
 bash ./setup.sh
 
 # Setup Camera
@@ -6,3 +7,5 @@ bash ./setup.sh
 
 # To start camera
 bash ~/Documents/RPi_Cam_Web_Interface/start.sh 
+
+
