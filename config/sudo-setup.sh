@@ -13,3 +13,10 @@ sudo apt install php libapache2-mod-php -y
 
 # Add apache confi to run from pi dir
 sudo cat /home/pi/longibot-raspberry/config/apache-custom.txt >> /etc/apache2/apache2.conf
+
+# Add apache2 user to group to dialout group
+sudo usermod -a -G dialout www-data
+# if doesnt work try adding it to root group
+# sudo usermod -a -G root www-data
+
+

@@ -8,6 +8,8 @@ $file = '/home/pi/longibot-raspberry/write_line.py';
 
 exec('bash /home/pi/longibot-raspberry/web/run.sh');
 
+exec('python3 /home/pi/longibot-raspberry/web/write_line.py');
+
 if(file_exists($file)){
 	
 	ob_start();
