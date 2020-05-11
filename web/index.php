@@ -4,7 +4,7 @@ Longibottt
 
 echo 'some some';
 
-$file = '/home/pi/longibot-raspberry/write_line.py';
+$file = '/ho2me/pi/longibot-raspberry/write_line.py';
 
 exec('bash /home/pi/longibot-raspberry/web/run.sh');
 
