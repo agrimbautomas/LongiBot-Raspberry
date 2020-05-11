@@ -90,6 +90,7 @@ body {
     margin: 2em auto 0px;
     font-weight: 400;
 }
+
 .buttons-container .main-button > div i {
     font-size: 3rem;
     margin: 0.6em auto 0px;
@@ -109,4 +110,25 @@ body {
 .buttons-container .main-button#button3,
 .buttons-container .main-button#button4 {
     background: #f97f74;
+}
+
+@media (max-width: 600px) {
+    .buttons-container {
+        grid-template-columns: 48% 48%;
+        grid-gap: 2% 4%;
+        grid-template-rows: 32% 33% 33%;
+    }
+
+    .buttons-container .main-button {
+        font-size: 1.4rem;
+    }
+
+    .buttons-container .main-button > div {
+        top: 14%;
+    }
+
+    .buttons-container .main-button > div span {
+        height: 30px;
+        font-size: 0.8rem;
+    }
 }
