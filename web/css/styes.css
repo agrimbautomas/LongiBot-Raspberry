@@ -1,0 +1,112 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background: #3c4555;
+}
+
+.buttons-container {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 48% 48%;
+    text-align: center;
+    grid-gap: 3% 2%;
+}
+
+.buttons-container .main-button {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.buttons-container .main-button:hover {
+    opacity: 0.7;
+}
+
+.buttons-container .main-button > div {
+    position: absolute;
+    top: 17%;
+    width: 100%;
+}
+
+.buttons-container .main-button > div span {
+    color: black;
+    font-size: 1rem;
+    width: 100%;
+    display: inline-block;
+    margin: 2em auto 0px;
+    font-weight: 400;
+}
+.buttons-container .main-button > div i {
+    font-size: 3rem;
+    margin: 0.6em auto 0px;
+    color: white;
+}
+
+.buttons-container .main-button#button1,
+.buttons-container .main-button#button5 {
+    background: #53c9ee;
+}
+
+.buttons-container .main-button#button2,
+.buttons-container .main-button#button6 {
+    background: #fac469;
+}
+
+.buttons-container .main-button#button3,
+.buttons-container .main-button#button4 {
+    background: #f97f74;
+}
