@@ -5,4 +5,4 @@ global $error;
 if ( isset($output) )
 	echo "Response ===> " . $output;
 elseif ( isset($error) )
-	echo "Error ===>" . $error;
+	echo '{"error":  "'. $error .'" }';
