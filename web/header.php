@@ -18,3 +18,9 @@
 </head>
 
 <body>
+
+<header>
+    <div class="error-bar">
+	    <span></span>
+    </div>
+</header>

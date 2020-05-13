@@ -2,7 +2,7 @@
 global $output;
 global $error;
 
-if ( !is_null($output) )
-	echo "response:" . $output;
-elseif ( !is_null($error) )
-	echo "Error:" . $error;
+if ( isset($output) )
+	echo "Response ===> " . $output;
+elseif ( isset($error) )
+	echo "Error ===>" . $error;
