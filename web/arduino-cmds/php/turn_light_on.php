@@ -6,6 +6,4 @@ if ( file_exists($file) )
 else
 	$error = 'File doesnt exist';
 
-
-echo "response:" . $output;
-
+include '../../notifications.php';
