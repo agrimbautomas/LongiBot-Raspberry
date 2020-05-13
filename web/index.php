@@ -1,4 +1,7 @@
-<?php include 'header.php';?>
+<?php include 'header.php';
+
+echo 'Propietario script actual: ' . get_current_user();
+?>
 <div class="buttons-container">
     <div class="main-button" id="button1">
         <div>
