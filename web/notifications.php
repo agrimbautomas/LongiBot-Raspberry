@@ -3,6 +3,6 @@ global $output;
 global $error;
 
 if ( isset($output) )
-	echo "Response ===> " . $output;
+	echo '{"error": "' . $output . '"}';
 elseif ( isset($error) )
-	echo '{"error":  "'. $error .'" }';
+	echo '{"error": "'. $error .'" }';
