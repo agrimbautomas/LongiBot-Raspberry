@@ -1,15 +1,14 @@
 $(document).ready(function () {
 
-    $('#button1').click(function () {
-        $.get("arduino-cmds/move_forward.php", function (data) {
-            console.log(data);
-        });
-    });
+    setupButton('#button1', 'arduino-cmds/php/turn_light_on.php');
+    setupButton('#button2', 'arduino-cmds/php/test.php');
 
-    $('#button2').click(function () {
-        $.get("arduino-cmds/test.html", function (data) {
-            console.log(data);
+    function setupButton(selector, file) {
+        $(selector).click(function () {
+            $.get(file, function (data) {
+                console.log(file, data);
+            });
         });
-    });
+    }
 
 });
