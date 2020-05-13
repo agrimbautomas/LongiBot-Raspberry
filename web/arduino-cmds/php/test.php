@@ -1,6 +1,4 @@
 <?php
-
-echo 'Test file response';
+$error = 'Test file response';
 
 include '../../notifications.php';
-
