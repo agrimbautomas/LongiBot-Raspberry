@@ -1,4 +1,4 @@
 #!/bin/bash
-python3 /home/pi/longibot-raspberry/arduino-cmds/py/serial-communication.py
+python3 /home/pi/longibot-raspberry/web/arduino-cmds/py/serial-communication.py
 
 
