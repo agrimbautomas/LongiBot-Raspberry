@@ -5,9 +5,9 @@ $(document).ready(function () {
 
     setupButton('#button1', 'arduino-cmds/php/stop.php');
     setupButton('#button2', 'arduino-cmds/php/move_forward.php');
-    setupButton('#button4', 'arduino-cmds/php/test.php');
+    setupButton('#button4', 'arduino-cmds/php/move_left.php');
     setupButton('#button5', 'arduino-cmds/php/move_backward.php');
-    setupButton('#button6', 'arduino-cmds/php/test.php');
+    setupButton('#button6', 'arduino-cmds/php/move_right.php');
 });
 
 function setupVars() {
