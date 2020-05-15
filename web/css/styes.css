@@ -156,3 +156,23 @@ header .error-bar span {
         font-size: 0.8rem;
     }
 }
+
+@media (max-width: 420px) {
+
+    .buttons-container .main-button {
+        font-size: 1rem;
+    }
+
+    .buttons-container .main-button > div {
+        top: 24%;
+    }
+
+    .buttons-container .main-button > div span {
+        display: none;
+    }
+
+    .buttons-container .main-button > div i {
+        font-size: 2rem;
+        width: 100%;
+    }
+}
