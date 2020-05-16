@@ -197,6 +197,19 @@ header .error-bar span {
     transform: rotate(-45deg);
 }
 
+/************ Debugger ************/
+.debugger-icon{
+    background: black;
+    position: fixed;
+    color: white;
+    border-radius: 50%;
+    bottom: 10px;
+    left: 10px;
+    text-align: center;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
 /************ Logs ************/
 .log-container {
     background: black;
@@ -206,8 +219,8 @@ header .error-bar span {
 }
 
 .log-container hr {
-    color: red;
-    background: red;
+    border-color: red;
+    margin: 14px 0px;
 }
 
 @media (max-width: 900px) {
