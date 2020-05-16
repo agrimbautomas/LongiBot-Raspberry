@@ -78,12 +78,13 @@ header .error-bar span {
 
 }
 
+/************ Home ************/
 .buttons-container {
     height: 100vh;
     width: 100%;
     display: grid;
     grid-template-columns: 32% 32% 32%;
-    grid-template-rows: 48% 48%;
+    grid-template-rows: 100%;
     text-align: center;
     grid-gap: 3% 2%;
 }
@@ -94,6 +95,8 @@ header .error-bar span {
     position: relative;
     cursor: pointer;
     transition: all 0.5s ease-out;
+    display: grid;
+    text-decoration: none;
 }
 
 .buttons-container .main-button:hover {
@@ -101,8 +104,7 @@ header .error-bar span {
 }
 
 .buttons-container .main-button > div {
-    position: absolute;
-    top: 17%;
+    align-self: center;
     width: 100%;
 }
 
@@ -136,11 +138,71 @@ header .error-bar span {
     background: #f97f74;
 }
 
-@media (max-width: 600px) {
+
+/************ Joystick ************/
+.joystick-container {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 32% 32% 32%;
+    text-align: center;
+    grid-gap: 2% 2%;
+}
+
+.joystick-container .joystick-button {
+    color: white;
+    font-size: 4rem;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    display: grid;
+    background: #53c9ee;
+}
+
+.joystick-container #joystick-stop-button {
+    background: #f97f74;
+}
+
+
+.joystick-container #joystick-button1,
+.joystick-container #joystick-button3,
+.joystick-container #joystick-button6,
+.joystick-container #joystick-button8 {
+    background: #fac469;
+}
+
+.joystick-container .joystick-button:hover {
+    opacity: 0.7;
+}
+
+.joystick-container .joystick-button > i {
+    align-self: center;
+    width: 100%;
+}
+
+.joystick-container #joystick-button1 i {
+    transform: rotate(-45deg);
+}
+
+.joystick-container #joystick-button3 i {
+    transform: rotate(45deg);
+}
+
+.joystick-container #joystick-button6 i {
+    transform: rotate(45deg);
+}
+
+.joystick-container #joystick-button8 i {
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 900px) {
+    /************ Home ************/
     .buttons-container {
-        grid-template-columns: 48% 48%;
+        grid-template-columns: 100%;
         grid-gap: 2% 4%;
-        grid-template-rows: 32% 33% 33%;
+        grid-template-rows: 33% 33% 33%;
     }
 
     .buttons-container .main-button {
@@ -158,7 +220,7 @@ header .error-bar span {
 }
 
 @media (max-width: 420px) {
-
+    /************ Home ************/
     .buttons-container .main-button {
         font-size: 1rem;
     }

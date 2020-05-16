@@ -1,27 +1,8 @@
 let $headerNotificationBar;
 
 $(document).ready(function () {
-    setupVars();
-
-    setupButton('#button1', 'arduino-cmds/php/stop.php');
-    setupButton('#button2', 'arduino-cmds/php/move_forward.php');
-    setupButton('#button4', 'arduino-cmds/php/move_left.php');
-    setupButton('#button5', 'arduino-cmds/php/move_backward.php');
-    setupButton('#button6', 'arduino-cmds/php/move_right.php');
-});
-
-function setupVars() {
     $headerNotificationBar = $('.error-bar');
-}
-
-function setupButton(selector, file) {
-    $(selector).click(function () {
-        $.get(file, function (data) {
-            console.log(data);
-            displayResponse(data)
-        });
-    });
-}
+});
 
 function setupErrorBar(message) {
     $headerNotificationBar.children('span').text(message);
