@@ -6,5 +6,4 @@ def write_in_serial(param):
     ser.baudrate=9600
 
     ser.write(str.encode(param))
-
-    print("move_forward.py executed")
+    print("write_in_serial(" + param + ") executed")
