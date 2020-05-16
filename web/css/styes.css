@@ -78,6 +78,21 @@ header .error-bar span {
 
 }
 
+/************ Containers Frame ************/
+.containers-frame{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.containers-frame-screen{
+    position: absolute;
+}
+
+.containers-frame-screen.hidden-frame{
+    display: none;
+}
+
 /************ Home ************/
 .buttons-container {
     height: 100vh;

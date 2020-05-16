@@ -1,4 +1,4 @@
-<div class="joystick-container" id="joystick-container">
+<div class="joystick-container containers-frame-screen hidden-frame" id="joystick-container">
     <div class="joystick-button" id="joystick-button1">
         <i class="fas fa-arrow-circle-up"></i>
     </div>
