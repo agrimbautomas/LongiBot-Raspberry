@@ -198,10 +198,16 @@ header .error-bar span {
 }
 
 /************ Logs ************/
-.log-container{
+.log-container {
     background: black;
     height: 100vh;
     color: #01ff5c;
+    overflow: auto;
+}
+
+.log-container hr {
+    color: red;
+    background: red;
 }
 
 @media (max-width: 900px) {
