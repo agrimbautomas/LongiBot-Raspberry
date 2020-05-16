@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Longibot Web Server</title>
+    <title>iFlan</title>
     <meta name="keywords" content="iFlan "/>
     <meta name="description" content="iFlan"/>
     <meta name="robots" content="INDEX, FOLLOW"/>
