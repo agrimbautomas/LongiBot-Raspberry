@@ -6,11 +6,6 @@
     <meta name="robots" content="INDEX, FOLLOW"/>
     <meta name="author" content="iFlan"/>
 
-    <meta name="HandheldFriendly" content="true"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-    <meta name="apple-mobile-web-app-title" content="iFlan">
-    <meta name="viewport" content="initial-scale=1 maximum-scale=1 user-scalable=0 minimal-ui"/>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="Content-Language" content="ES"/>
@@ -26,6 +21,21 @@
     <script src="js/screen-animations.js"></script>
     <script src="js/joystick.js"></script>
     <script src="js/logs.js"></script>
+
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="iFlan">
+    <meta name="apple-mobile-web-app-title" content="iFlan">
+    <meta name="theme-color" content="#59bf6a">
+    <meta name="msapplication-navbutton-color" content="#59bf6a">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" sizes="128x128" href="images/icons/flan-icon.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="images/icons/flan-icon.png">
 </head>
 
 <body>

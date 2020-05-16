@@ -1,0 +1,16 @@
+{
+  "name": "iFlan",
+  "short_name": "iFlan",
+  "description": "PWA to control the iFlan",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#59bf6a",
+  "icons": [
+    {
+      "src": "flan-icon",
+      "sizes": "128x128"
+    }
+  ],
+  "background_color": "#3c4555"
+}
