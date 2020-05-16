@@ -1,14 +1,4 @@
 #!/usr/bin/env python3
+from arduino import write_in_serial;
 
-import serial; 
-
-ser = serial.Serial('/dev/ttyACM0', 9600); 
-ser.baudrate=9600
-
-param = '7'
-ser.write(str.encode(param))
-
-print("something")
-
-
-
+write_in_serial('L')
