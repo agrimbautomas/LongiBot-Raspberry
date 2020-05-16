@@ -1,0 +1,6 @@
+b'=== Serial Ready ===\r\n'
+b'=== Ultrasonic Ready ===\r\n'
+b'=== DC motors Ready ===\r\n'
+b'Char received: 5\r\n'
+b'=== MOVING DC RIGHT ===\r\n'
+b'Char received: 0\r\n'
