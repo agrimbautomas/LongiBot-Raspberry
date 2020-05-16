@@ -22,6 +22,7 @@
 
 	<script src="js/jquery.js"></script>
 	<script src="js/functions.js"></script>
+	<script src="js/screen-animations.js"></script>
 	<script src="js/joystick.js"></script>
 </head>
 

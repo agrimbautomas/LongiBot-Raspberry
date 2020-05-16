@@ -123,18 +123,15 @@ header .error-bar span {
     color: white;
 }
 
-.buttons-container .main-button#button1,
-.buttons-container .main-button#button5 {
+.blue-background {
     background: #53c9ee;
 }
 
-.buttons-container .main-button#button2,
-.buttons-container .main-button#button6 {
+.yellow-background{
     background: #fac469;
 }
 
-.buttons-container .main-button#button3,
-.buttons-container .main-button#button4 {
+.red-background {
     background: #f97f74;
 }
 

@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
-<div class="buttons-container">
-    <div class="main-button" id="button1">
+<div class="buttons-container" id="menu-container">
+    <div class="main-button blue-background">
         <div>
             Turn On Light
             <span>Prender luz</span>
@@ -8,7 +8,7 @@
         </div>
     </div>
 
-    <div class="main-button" id="button2">
+    <div class="main-button yellow-background">
         <div>
             Automatic
             <span>Longibot modo automatico</span>
@@ -16,36 +16,15 @@
         </div>
     </div>
 
-    <a class="main-button" id="button3" href="joystick.php">
+    <div class="main-button red-background" id="go-to-joystick">
         <div>
             Manual
             <span>Longibot modo manual</span>
             <i class="fas fa-mouse"></i>
         </div>
-    </a>
-<!---->
-<!--    <div class="main-button" id="button4">-->
-<!--        <div>-->
-<!--            Move Longi-->
-<!--            <span>Mover las longitas</span>-->
-<!--            <i class="fas fa-drumstick-bite"></i>-->
-<!--        </div>-->
-<!--    </div>-->
-<!---->
-<!--    <div class="main-button" id="button5">-->
-<!--        <div>-->
-<!--            "Te dije"-->
-<!--            <span>Cuando el flan ya te lo dijo</span>-->
-<!--            <i class="far fa-hand-pointer"></i>-->
-<!--        </div>-->
-<!--    </div>-->
-<!---->
-<!--    <div class="main-button" id="button6">-->
-<!--        <div>-->
-<!--            Fofa style-->
-<!--            <span>Longibot modo fofamatic</span>-->
-<!--            <i class="fas fa-couch"></i>-->
-<!--        </div>-->
-<!--    </div>-->
+    </div>
 </div>
-<?php include 'footer.php';?>
+
+<?php include 'joystick.php'; ?>
+
+<?php include 'footer.php'; ?>

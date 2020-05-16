@@ -11,7 +11,7 @@
                     success: function (data) {
                         var result = $.parseJSON(data);
                         if (result.content)
-                            $('.log-container').prepend('<hr>' + result.content.replace(/\n/g, "<br />"));
+                            $('.log-container').html(result.content.replace(/\n/g, "<br />"));
 
                         time = result.time;
                     }
