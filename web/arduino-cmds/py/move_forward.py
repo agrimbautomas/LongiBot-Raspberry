@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 import serial; 
 
-ser = serial.Serial('/dev/ttyACM0', 9600); 
-ser.baudrate=9600
+write_in_serial(2)
 
-param = '2'
-ser.write(str.encode(param))
+def write_in_serial(param):
+    ser = serial.Serial('/dev/ttyACM0', 9600)
+    ser.baudrate=9600
 
-print("move_forward.py executed")
+    param = '2'
+    ser.write(str.encode(param))
 
-
-
+    print("move_forward.py executed")
