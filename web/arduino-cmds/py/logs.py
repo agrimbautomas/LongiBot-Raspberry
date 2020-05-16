@@ -2,7 +2,7 @@ import logging
 import datetime
 
 # logging  
-LOG = "../../iflan.log"                                                     
+LOG = "../../logs/iflan.log"
 logging.basicConfig(filename=LOG, filemode="w", level=logging.DEBUG)  
 
 # console handler  

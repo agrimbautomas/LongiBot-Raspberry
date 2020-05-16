@@ -197,6 +197,13 @@ header .error-bar span {
     transform: rotate(-45deg);
 }
 
+/************ Logs ************/
+.log-container{
+    background: black;
+    height: 100vh;
+    color: #01ff5c;
+}
+
 @media (max-width: 900px) {
     /************ Home ************/
     .buttons-container {
