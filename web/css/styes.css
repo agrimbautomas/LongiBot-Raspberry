@@ -78,25 +78,85 @@ header .error-bar span {
 
 }
 
+header {
+
+}
+
+/************ Nav ************/
+
+header nav {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background: #59bf6a;
+    border-bottom: 1px #4ca55b solid;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+header nav > * {
+    align-self: center;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+header .back-button,
+header .debugger-icon {
+    text-align: center;
+    cursor: pointer;
+}
+
+
+header .back-button i,
+header .debugger-icon i {
+    background: white;
+    text-align: center;
+    cursor: pointer;
+    color: #3c4555;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+header .back-button {
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+header .back-button i {
+    width: auto;
+    background: none;
+    color: white;
+    font-size: 2em;
+    padding: 0px 1em;
+}
+
 /************ Containers Frame ************/
-.containers-frame{
+.containers-frame {
     position: fixed;
     width: 100%;
     height: 100%;
 }
 
-.containers-frame-screen{
+.containers-frame-screen {
     position: absolute;
+    width: 100%;
+    height: calc(100% - 50px);
+    padding-top: 50px;
 }
 
-.containers-frame-screen.hidden-frame{
+.containers-frame-screen.hidden-frame {
     display: none;
 }
 
 /************ Home ************/
 .buttons-container {
-    height: 100vh;
-    width: 100%;
     display: grid;
     grid-template-columns: 32% 32% 32%;
     grid-template-rows: 100%;
@@ -142,7 +202,7 @@ header .error-bar span {
     background: #53c9ee;
 }
 
-.yellow-background{
+.yellow-background {
     background: #fac469;
 }
 
@@ -153,8 +213,6 @@ header .error-bar span {
 
 /************ Joystick ************/
 .joystick-container {
-    height: 100vh;
-    width: 100%;
     display: grid;
     grid-template-columns: 32% 32% 32%;
     grid-template-rows: 32% 32% 32%;
@@ -169,19 +227,10 @@ header .error-bar span {
     cursor: pointer;
     transition: all 0.5s ease-out;
     display: grid;
-    background: #53c9ee;
 }
 
 .joystick-container #joystick-stop-button {
     background: #f97f74;
-}
-
-
-.joystick-container #joystick-button1,
-.joystick-container #joystick-button3,
-.joystick-container #joystick-button6,
-.joystick-container #joystick-button8 {
-    background: #fac469;
 }
 
 .joystick-container .joystick-button:hover {
@@ -209,22 +258,12 @@ header .error-bar span {
     transform: rotate(-45deg);
 }
 
-/************ Debugger ************/
-.debugger-icon{
-    background: black;
-    position: fixed;
-    color: white;
-    border-radius: 50%;
-    bottom: 10px;
-    left: 10px;
-    text-align: center;
-    padding: 10px 10px;
-    cursor: pointer;
+/************ Logs ************/
+.debugger-container {
+    margin: auto 2%;
 }
 
-/************ Logs ************/
 .log-container {
-    background: black;
     height: 100vh;
     color: #01ff5c;
     overflow: auto;
