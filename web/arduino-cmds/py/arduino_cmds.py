@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-import serial;
-import ACM_PORT from config
+import serial
+from config import ACM_PORT
 
 def write_in_serial(param):
     ser = serial.Serial(ACM_PORT, 9600)

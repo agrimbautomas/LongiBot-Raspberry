@@ -1,7 +1,7 @@
 import serial
 import RPi.GPIO as GPIO
 import time
-import ACM_PORT from config
+from config import ACM_PORT 
 
 ser=serial.Serial(ACM_PORT,9600)  #change ACM number as found from ls /dev/tty/ACM*
 ser.baudrate=9600
