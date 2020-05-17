@@ -1,5 +1,5 @@
 FILE=/dev/ttyACM0
-if [ -f "$FILE" ]; then 
+if [ -a "$FILE" ]; then
 	echo 1; 
 else 
 	echo 0;
