@@ -48,8 +48,11 @@
     <nav>
         <span class="back-button" id="go-to-menu"><i class="fas fa-angle-left"></i></span>
         <h1>iFlan</h1>
-        <span class="debugger-icon" id="go-to-debugger"><i class="fas fa-bug"></i></span>
-    </nav>
 
+        <span class="nav-right-icons">
+            <i class="fas fa-infinity" id="arduino-icon"></i>
+            <i class="fas fa-bug" id="go-to-debugger"></i>
+        </span>
+    </nav>
 
 </header>

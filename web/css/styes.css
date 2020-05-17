@@ -108,20 +108,34 @@ header h1 {
 }
 
 header .back-button,
-header .debugger-icon {
+header .nav-right-icons {
     text-align: center;
     cursor: pointer;
 }
 
 
 header .back-button i,
-header .debugger-icon i {
+header .nav-right-icons i {
     background: white;
     text-align: center;
     cursor: pointer;
     color: #3c4555;
     border-radius: 50%;
-    padding: 7px;
+    height: 28px;
+    width: 28px;
+    padding: 0px;
+    overflow: hidden;
+    line-height: 30px;
+    margin: auto 5%;
+    font-size: 0.9rem;
+    transition: all 0.5s ease-out;
+}
+
+header .nav-right-icons i.fa-infinity.connected{
+    background: #53c9ee;
+}
+header .nav-right-icons i.fa-infinity.disconnected{
+    background: #f97f74;
 }
 
 header .back-button {
