@@ -28,14 +28,16 @@ function set_arduino_state() {
 }
 
 function is_arduino_connected() {
+    let response = false;
     $.get({
         url: "arduino-cmds/php/is_arduino_connected.php",
         success: function (data) {
             let result = $.parseJSON(data);
             console.log(result);
-            return result.response == true;
+            response = result.response == true;
         }
     });
+    return response;
 }
 
 $.fn.extend({
