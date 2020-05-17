@@ -20,6 +20,7 @@ function displayResponse(data) {
 }
 
 function set_arduino_state() {
+    console.log("is_arduino_connected", is_arduino_connected());
     if (is_arduino_connected())
         $arduinoIcon.addClass("connected");
     else
@@ -31,7 +32,8 @@ function is_arduino_connected() {
         url: "arduino-cmds/php/is_arduino_connected.php",
         success: function (data) {
             let result = $.parseJSON(data);
-            return result.response == "1";
+            console.log(result);
+            return result.response == true;
         }
     });
 }
