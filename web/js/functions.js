@@ -19,25 +19,22 @@ function displayResponse(data) {
         setupErrorBar(parsedData.error);
 }
 
-function set_arduino_state() {
-    console.log("is_arduino_connected", is_arduino_connected());
-    if (is_arduino_connected())
+function set_arduino_state_class(is_connected) {
+    console.log("is_connected", is_connected);
+    if (is_connected)
         $arduinoIcon.addClass("connected");
     else
         $arduinoIcon.addClass("disconnected");
 }
 
-function is_arduino_connected() {
-    let response = false;
+function set_arduino_state() {
     $.get({
         url: "arduino-cmds/php/is_arduino_connected.php",
         success: function (data) {
             let result = $.parseJSON(data);
-            console.log(result);
-            response = result.response == true;
+            set_arduino_state_class(result.response == true);
         }
     });
-    return response;
 }
 
 $.fn.extend({

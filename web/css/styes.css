@@ -132,10 +132,10 @@ header .nav-right-icons i {
 }
 
 header .nav-right-icons i.fa-infinity.connected{
-    background: #53c9ee;
+    color: #53c9ee;
 }
 header .nav-right-icons i.fa-infinity.disconnected{
-    background: #f97f74;
+    color: #f97f74;
 }
 
 header .back-button {
