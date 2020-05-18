@@ -281,9 +281,24 @@ header .back-button i {
 .automatic-container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 48%;
+    grid-template-rows: 30% 68%;
     text-align: center;
     grid-gap: 2% 2%;
+}
+
+.automatic-container > * {
+    align-self: center;
+}
+
+.automatic-container .automatic-button {
+    font-size: 2rem;
+
+}
+
+
+.automatic-container .automatic-buttons {
+    font-size: 4rem;
+    cursor: pointer;
 }
 
 
