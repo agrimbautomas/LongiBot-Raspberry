@@ -10,7 +10,6 @@ $(document).ready(function () {
 function setupButton(selector, file) {
     $(selector).click(function () {
         $.get(file, function (data) {
-            console.log(data);
             displayResponse(data)
         });
     });
