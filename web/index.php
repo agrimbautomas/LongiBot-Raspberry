@@ -3,6 +3,7 @@
 
 	<?php include 'menu.php'; ?>
 	<?php include 'joystick.php'; ?>
+	<?php include 'automatic.php'; ?>
 	<?php include 'logs.php'; ?>
 
 </div>

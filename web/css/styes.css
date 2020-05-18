@@ -93,7 +93,7 @@ header nav {
     background: #59bf6a;
     border-bottom: 1px #4ca55b solid;
     display: grid;
-    grid-template-columns: 10% 80% 10%;
+    grid-template-columns: 20% 60% 20%;
 }
 
 header nav > * {
@@ -131,10 +131,15 @@ header .nav-right-icons i {
     transition: all 0.5s ease-out;
 }
 
-header .nav-right-icons i.fa-infinity.connected{
+header .nav-right-icons i.fa-infinity {
+    cursor: initial;
+}
+
+header .nav-right-icons i.fa-infinity.connected {
     color: #53c9ee;
 }
-header .nav-right-icons i.fa-infinity.disconnected{
+
+header .nav-right-icons i.fa-infinity.disconnected {
     color: #f97f74;
 }
 
@@ -272,6 +277,16 @@ header .back-button i {
     transform: rotate(-45deg);
 }
 
+/************ Automatic ************/
+.automatic-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 48%;
+    text-align: center;
+    grid-gap: 2% 2%;
+}
+
+
 /************ Logs ************/
 .debugger-container {
     margin: auto 2%;
@@ -310,8 +325,19 @@ header .back-button i {
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 600px) {
     /************ Home ************/
+    header nav {
+        grid-template-columns: 30% 40% 30%;
+    }
+
+    header .nav-right-icons i {
+        height: 24px;
+        width: 24px;
+        font-size: 0.8rem;
+        line-height: 27px;
+    }
+
     .buttons-container .main-button {
         font-size: 1rem;
     }

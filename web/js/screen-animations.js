@@ -1,5 +1,6 @@
 let $menuContainer;
 let $joystickContainer;
+let $automaticContainer;
 let $debuggerContainer;
 let $backButton;
 let ANIMATION_SPEED = 400;
@@ -12,6 +13,7 @@ $(document).ready(function () {
 function setupContainers() {
     $menuContainer = $('#menu-container');
     $joystickContainer = $('#joystick-container');
+    $automaticContainer = $('#automatic-container');
     $debuggerContainer = $('#debugger-container');
     $backButton = $('header .back-button');
 }
@@ -22,6 +24,10 @@ function setupScreenAnimations() {
         showBackButton();
     });
 
+    $('#go-to-automatic').click(function () {
+        switchScreen($automaticContainer, 'fromTop')
+        showBackButton();
+    });
     $('#go-to-debugger').click(function () {
         switchScreen($debuggerContainer, 'fromBottom')
         showBackButton();
@@ -33,17 +39,26 @@ function setupScreenAnimations() {
     });
 }
 
-function switchScreen($containerToShow, animation = 'fromBottom') {
+function switchScreen($containerToShow, animation) {
     let $activeContainer = $('.active-container');
 
-    if (animation === 'fromBottom')
-        displayFromBottom($activeContainer, $containerToShow);
+    switch (animation) {
+        case 'fromTop':
+            displayFromTop($activeContainer, $containerToShow);
+            break;
 
-    if (animation === 'fromRight')
-        displayFromRight($activeContainer, $containerToShow);
+        case 'fromBottom':
+            displayFromBottom($activeContainer, $containerToShow);
+            break;
 
-    if (animation === 'fromLeft')
-        displayFromLeft($activeContainer, $containerToShow);
+        case 'fromRight':
+            displayFromRight($activeContainer, $containerToShow);
+            break;
+
+        default:
+            displayFromLeft($activeContainer, $containerToShow);
+            break;
+    }
 }
 
 /*****************************************/
@@ -63,6 +78,25 @@ function hideBackButton() {
 /************** TRANSITIONS **************/
 
 /*****************************************/
+function displayFromTop($containerToHide, $containerToShow) {
+    $containerToHide
+        .animate({
+            top: '110%'
+        }, ANIMATION_SPEED)
+        .removeClass('active-container');
+
+    $containerToShow
+        .css({
+            top: '-110%',
+            left: '0%'
+        })
+        .removeClass('hidden-frame')
+        .addClass('active-container')
+        .animate({
+            top: '0%'
+        }, ANIMATION_SPEED);
+}
+
 function displayFromBottom($containerToHide, $containerToShow) {
     $containerToHide
         .animate({
