@@ -4,10 +4,10 @@
     </div>
 
     <div class="automatic-buttons">
-        <div class="automatic-button yellow-background" id="stop-automatic-button">
+        <div class="automatic-action-button" id="stop-automatic-button">
             <i class="far fa-pause-circle"></i>
         </div>
-        <div class="automatic-button yellow-background" id="play-automatic-button">
+        <div class="automatic-action-button" id="play-automatic-button">
             <i class="far fa-play-circle"></i>
         </div>
     </div>

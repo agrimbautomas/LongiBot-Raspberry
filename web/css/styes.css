@@ -107,12 +107,16 @@ header h1 {
     font-size: 1.2rem;
 }
 
+
 header .back-button,
 header .nav-right-icons {
-    text-align: center;
     cursor: pointer;
+    text-align: right;
 }
 
+header .back-button {
+    text-align: left;
+}
 
 header .back-button i,
 header .nav-right-icons i {
@@ -292,13 +296,17 @@ header .back-button i {
 
 .automatic-container .automatic-button {
     font-size: 2rem;
-
+    color: #53c9ee;
 }
 
-
-.automatic-container .automatic-buttons {
-    font-size: 4rem;
+.automatic-container .automatic-action-button {
+    font-size: 10rem;
     cursor: pointer;
+    color: #59bf6a;
+}
+
+.automatic-container .automatic-action-button:active {
+    color: #fac469;
 }
 
 

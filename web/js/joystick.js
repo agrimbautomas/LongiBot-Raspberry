@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     setupButton('#joystick-stop-button', '../arduino-cmds/php/stop.php');
     setupButton('#joystick-button2', '../arduino-cmds/php/move_forward.php');
@@ -7,10 +6,13 @@ $(document).ready(function () {
     setupButton('#joystick-button7', '../arduino-cmds/php/move_backward.php');
 });
 
-function setupButton(selector, file) {
+function setupButton(selector, file, callback = null) {
     $(selector).click(function () {
         $.get(file, function (data) {
             displayResponse(data)
         });
     });
+
+    if (callback !== null)
+        callback();
 }
