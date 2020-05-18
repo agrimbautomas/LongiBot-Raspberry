@@ -20,7 +20,6 @@ function displayResponse(data) {
 }
 
 function set_arduino_state_class(is_connected) {
-    console.log("is_connected", is_connected);
     if (is_connected)
         $arduinoIcon.addClass("connected");
     else

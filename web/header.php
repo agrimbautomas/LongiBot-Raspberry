@@ -20,6 +20,7 @@
     <script src="js/functions.js"></script>
     <script src="js/screen-animations.js"></script>
     <script src="js/joystick.js"></script>
+    <script src="js/automatic.js"></script>
     <script src="js/logs.js"></script>
 
     <link rel="manifest" href="manifest.json">

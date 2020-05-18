@@ -7,7 +7,7 @@
         </div>
     </div>
 
-    <div class="main-button yellow-background">
+    <div class="main-button yellow-background" id="go-to-automatic">
         <div>
             Automatic
             <span>Longibot modo automatico</span>
