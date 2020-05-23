@@ -8,12 +8,10 @@ $(document).ready(function () {
 
 function setupButton(selector, file, callback = null) {
     $(selector).click(function () {
-        // $.get(file, function (data) {
-        //     displayResponse(data)
-        // });
+        $.get(file, function (data) {
+            displayResponse(data)
+        });
 
-        console.log(callback);
-        console.log(callback !== null);
         if (callback !== null)
             callback();
     });
