@@ -294,15 +294,23 @@ header .back-button i {
     align-self: center;
 }
 
-.automatic-container .automatic-button {
+.automatic-container .automatic-mode-label {
     font-size: 2rem;
     color: #53c9ee;
+}
+
+.automatic-container .automatic-mode-label .running-message {
+    display: none;
 }
 
 .automatic-container .automatic-action-button {
     font-size: 10rem;
     cursor: pointer;
     color: #59bf6a;
+}
+
+.automatic-container #stop-automatic-button {
+    display: none;
 }
 
 .automatic-container .automatic-action-button:active {

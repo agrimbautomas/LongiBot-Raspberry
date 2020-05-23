@@ -1,6 +1,6 @@
 <div class="automatic-container containers-frame-screen hidden-frame" id="automatic-container">
-    <div class="automatic-button">
-        <span>Running on automatic mode</span>
+    <div class="automatic-mode-label">
+        <span class="running-message">Running on </span>Automatic mode
     </div>
 
     <div class="automatic-buttons">
