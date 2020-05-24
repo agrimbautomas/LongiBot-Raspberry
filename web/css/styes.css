@@ -139,11 +139,11 @@ header .nav-right-icons i.fa-infinity {
     cursor: initial;
 }
 
-header .nav-right-icons i.fa-infinity.connected {
+header .nav-right-icons i.connected {
     color: #53c9ee;
 }
 
-header .nav-right-icons i.fa-infinity.disconnected {
+header .nav-right-icons i.disconnected {
     color: #f97f74;
 }
 

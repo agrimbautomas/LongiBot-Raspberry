@@ -47,6 +47,8 @@ function set_serial_state() {
         url: "arduino-cmds/php/is_serial_running.php",
         success: function (data) {
             let result = $.parseJSON(data);
+            console.log("data", data);
+            console.log("result", result);
             set_serial_state_class(result.response == true);
         }
     });
