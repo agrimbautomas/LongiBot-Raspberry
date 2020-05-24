@@ -8,7 +8,7 @@ $(document).ready(function () {
     $serialIcon = $('#serial-icon');
 
     set_arduino_state();
-    set_serial_state();
+    console.log(set_serial_state());
 });
 
 function setupErrorBar(message) {
@@ -47,21 +47,32 @@ function set_serial_state() {
         url: "arduino-cmds/php/is_serial_running.php",
         success: function (data) {
             let result = $.parseJSON(data);
-            console.log("data", data);
-            console.log("result", result);
             set_serial_state_class(result.response == true);
         }
     });
 }
 
 function set_serial_state_class(is_connected) {
-    if (is_connected)
+    if (is_connected) {
         $serialIcon.addClass("connected");
-    else
+    } else {
         $serialIcon.addClass("disconnected");
+        connect_to_serial();
+    }
+
 }
 
+function connect_to_serial() {
+    $.get({
+        url: "arduino-cmds/php/start_serial.php",
+        success: function (data) {
+            console.log('connect_to_serial', data);
+            set_serial_state();
+        }
+    });
+}
 
+// Add fn to jquery class
 $.fn.extend({
     qcss: function (css) {
         return $(this).queue(function (next) {

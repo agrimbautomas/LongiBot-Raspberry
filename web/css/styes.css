@@ -87,7 +87,8 @@ header {
 header nav {
     position: fixed;
     z-index: 99;
-    width: 100%;
+    width: 96%;
+    padding: 0px 2%;
     height: 40px;
     text-align: center;
     background: #59bf6a;
@@ -130,7 +131,7 @@ header .nav-right-icons i {
     padding: 0px;
     overflow: hidden;
     line-height: 30px;
-    margin: auto 5%;
+    margin: auto 5% auto 0px;
     font-size: 0.9rem;
     transition: all 0.5s ease-out;
 }
