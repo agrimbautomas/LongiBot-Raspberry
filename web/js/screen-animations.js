@@ -40,7 +40,7 @@ function setupScreenAnimations() {
     });
 
     $('#go-to-menu').click(function () {
-        switchScreen($menuContainer, 'fromLeft')
+        switchScreen($menuContainer, 'fromTop')
         hideBackButton();
     });
 }
