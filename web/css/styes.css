@@ -291,8 +291,11 @@ header .back-button i {
     grid-gap: 2% 2%;
 }
 
-.camera-container > * {
+.camera-container > iframe {
     align-self: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 /************ Automatic ************/
