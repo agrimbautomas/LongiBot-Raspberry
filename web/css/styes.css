@@ -294,6 +294,32 @@ header .back-button i {
     position: absolute;
 }
 
+.camera-container .camera-servo-buttons {
+    align-self: center;
+    width: 5%;
+    height: 10%;
+    position: absolute;
+    right: 4%;
+    bottom: 7%;
+}
+
+.camera-container .camera-servo-buttons > i {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 2rem;
+    color: #59bf6a;
+    background: #ffffffd1;
+    border-radius: 50%;
+    line-height: 3rem;
+}
+
+
+.camera-container .camera-servo-buttons > i:first-child {
+    margin-bottom: 20px;
+}
+
+
 /************ Automatic ************/
 .automatic-container {
     display: grid;
