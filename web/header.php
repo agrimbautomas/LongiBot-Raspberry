@@ -19,6 +19,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/functions.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/camera.js"></script>
     <script src="js/screen-animations.js"></script>
     <script src="js/joystick.js"></script>
     <script src="js/automatic.js"></script>

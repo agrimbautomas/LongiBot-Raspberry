@@ -312,6 +312,7 @@ header .back-button i {
     background: #ffffffd1;
     border-radius: 50%;
     line-height: 3rem;
+    cursor: pointer;
 }
 
 
