@@ -18,6 +18,7 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/functions.js"></script>
+    <script src="js/header.js"></script>
     <script src="js/screen-animations.js"></script>
     <script src="js/joystick.js"></script>
     <script src="js/automatic.js"></script>
@@ -51,6 +52,7 @@
         <h1>iFlan</h1>
 
         <span class="nav-right-icons">
+            <i class="fas fa-code" id="serial-icon"></i>
             <i class="fas fa-infinity" id="arduino-icon"></i>
             <i class="fas fa-bug" id="go-to-debugger"></i>
         </span>
