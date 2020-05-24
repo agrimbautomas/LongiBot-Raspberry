@@ -284,11 +284,7 @@ header .back-button i {
 
 /************ Camera ************/
 .camera-container {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 30% 68%;
-    text-align: center;
-    grid-gap: 2% 2%;
+    padding-top: 40px;
 }
 
 .camera-container > iframe {
