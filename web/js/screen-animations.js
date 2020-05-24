@@ -1,4 +1,5 @@
 let $menuContainer;
+let $cameraContainer;
 let $joystickContainer;
 let $automaticContainer;
 let $debuggerContainer;
@@ -12,6 +13,7 @@ $(document).ready(function () {
 
 function setupContainers() {
     $menuContainer = $('#menu-container');
+    $cameraContainer = $('#camera-container');
     $joystickContainer = $('#joystick-container');
     $automaticContainer = $('#automatic-container');
     $debuggerContainer = $('#debugger-container');
@@ -19,6 +21,10 @@ function setupContainers() {
 }
 
 function setupScreenAnimations() {
+    $('#go-to-camera').click(function () {
+        switchScreen($cameraContainer, 'fromLeft');
+        showBackButton();
+    });
     $('#go-to-joystick').click(function () {
         switchScreen($joystickContainer, 'fromRight');
         showBackButton();

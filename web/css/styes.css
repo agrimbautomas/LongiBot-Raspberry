@@ -282,6 +282,19 @@ header .back-button i {
     transform: rotate(-45deg);
 }
 
+/************ Camera ************/
+.camera-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 68%;
+    text-align: center;
+    grid-gap: 2% 2%;
+}
+
+.camera-container > * {
+    align-self: center;
+}
+
 /************ Automatic ************/
 .automatic-container {
     display: grid;

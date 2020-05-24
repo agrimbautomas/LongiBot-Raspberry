@@ -1,9 +1,9 @@
 <div class="buttons-container containers-frame-screen active-container" id="menu-container">
-    <div class="main-button blue-background">
+    <div class="main-button blue-background" id="go-to-camera">
         <div>
-            Turn On Light
-            <span>Prender luz</span>
-            <i class="far fa-lightbulb"></i>
+            Baby call
+            <span>Espiar al cobrita</span>
+            <i class="fas fa-camera-retro"></i>
         </div>
     </div>
 
