@@ -67,7 +67,6 @@ function connect_to_serial() {
         url: "arduino-cmds/php/start_serial.php",
         success: function (data) {
             console.log('connect_to_serial', data);
-            set_serial_state();
         }
     });
 }
