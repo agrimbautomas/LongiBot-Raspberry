@@ -10,6 +10,12 @@
 ++ autostart=no
 ++ jpglink=no
 ++ phpversion=7.3
+++ DEBUG=no
+++ RPICAMDIR=
+++ AUTOSTART=
+++ security=no
+++ user=
+++ passwd=
 + fn_stop
 + sudo killall raspimjpeg
 + sudo killall php
