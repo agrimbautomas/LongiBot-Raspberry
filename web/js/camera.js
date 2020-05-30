@@ -5,8 +5,14 @@ $(document).ready(function () {
     $upCameraButton = $('#camera-servo-move-up');
     $downCameraButton = $('#camera-servo-move-down');
 
+    setupCameraPlayer();
     setupCameraButtons();
 });
+
+function setupCameraPlayer() {
+    var player = videojs('raspi-cam');
+    player.play();
+}
 
 function setupCameraButtons() {
     $upCameraButton.click(modeCameraUp);

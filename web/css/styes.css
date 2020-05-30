@@ -287,11 +287,15 @@ header .back-button i {
     padding-top: 40px;
 }
 
-.camera-container > iframe {
+.camera-container > .video-js {
     align-self: center;
     width: 100%;
     height: 100%;
     position: absolute;
+}
+
+.camera-container > .video-js video {
+    outline: none;
 }
 
 .camera-container .camera-servo-buttons {
@@ -402,12 +406,12 @@ header .back-button i {
 }
 
 @media (max-height: 600px) {
-    .buttons-container .main-button > div span{
+    .buttons-container .main-button > div span {
         margin: 0.7em auto 0.7em;
         height: auto;
     }
 
-    .buttons-container .main-button > div i{
+    .buttons-container .main-button > div i {
         font-size: 2rem;
         margin: 0px auto;
     }
@@ -448,7 +452,7 @@ header .back-button i {
         width: 40px;
     }
 
-    .camera-container .camera-servo-buttons i{
+    .camera-container .camera-servo-buttons i {
         width: 40px;
         height: 40px;
         font-size: 1.3rem;
