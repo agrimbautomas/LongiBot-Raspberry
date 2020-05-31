@@ -296,6 +296,12 @@ header .back-button i {
 
 .camera-container > .video-js video {
     outline: none;
+    /*To hide white pixel*/
+    width: calc(100% + 2px);
+}
+.camera-container > .video-js .vjs-big-play-button {
+    left: 50%;
+    top: 48%;
 }
 
 .camera-container .camera-servo-buttons {
