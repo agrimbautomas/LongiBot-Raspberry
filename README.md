@@ -1,6 +1,6 @@
 # Run setup script
-sudo bash ./sudo-setup.sh
-bash ./setup.sh
+sudo sh config/sudo-setup.sh
+sh config/setup.sh
 
 # Setup Camera
 # Add commands to rc.local 'sudo vim /etc/rc.local'

@@ -19,4 +19,5 @@ sudo usermod -a -G dialout www-data
 # if doesnt work try adding it to root group
 # sudo usermod -a -G root www-data
 
-
+# Change permisson for nginx
+sudo usermod -a -G pi www-data
