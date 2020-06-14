@@ -5,6 +5,10 @@ sudo cp /home/pi/longibot-raspberry/config/.vimrc /root/
 sudo apt update
 sudo apt install nginx vim -y
 
+# Install php for the local weh
+sudo apt install php libapache2-mod-php -y
+sudo apt install php-fpm -y
+
 # Add default nginx config
 sudo cp /home/pi/longibot-raspberry/config/default-nginx /etc/nginx/sites-available/default
 
