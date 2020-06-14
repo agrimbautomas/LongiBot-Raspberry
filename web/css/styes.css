@@ -298,7 +298,9 @@ header .back-button i {
     outline: none;
     /*To hide white pixel*/
     width: calc(100% + 2px);
+    height: calc(100% - 30px);
 }
+
 .camera-container > .video-js .vjs-big-play-button {
     left: 50%;
     top: 48%;
