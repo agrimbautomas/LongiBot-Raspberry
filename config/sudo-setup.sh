@@ -15,10 +15,5 @@ sudo cp /home/pi/longibot-raspberry/config/default-nginx /etc/nginx/sites-availa
 # Start Nginx
 sudo /etc/init.d/nginx restart
 
-# Add apache2 user to group to dialout group
-sudo usermod -a -G dialout www-data
-# if doesnt work try adding it to root group
-# sudo usermod -a -G root www-data
-
 # Change permisson for nginx
 sudo usermod -a -G pi www-data
