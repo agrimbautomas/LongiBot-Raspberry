@@ -5,6 +5,7 @@ passwd
 sudo sh config/sudo-setup.sh
 sh config/setup.sh
 
+# Create startup script in /etc/init.d/picam
 
 ### Troobleshooting
 # Audio not working
