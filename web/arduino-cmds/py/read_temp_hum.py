@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-SECONDS = 5.0
+SECONDS = 60.0
 
 import time
 starttime=time.time()
