@@ -170,3 +170,151 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 509, in read
     raise SerialException('read failed: {}'.format(e))
 serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/start_serial.py", line 10, in <module>
+    response = ser.readline().decode('utf-8').rstrip()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/start_serial.py", line 10, in <module>
+    response = ser.readline().decode('utf-8').rstrip()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+Traceback (most recent call last):
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/start_serial.py", line 12, in <module>
+    save_by_type(response)
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/logs.py", line 31, in save_by_type
+    parsed_response = json.loads(response)
+  File "/usr/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/start_serial.py", line 12, in <module>
+    save_by_type(response)
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/logs.py", line 31, in save_by_type
+    parsed_response = json.loads(response)
+  File "/usr/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.7/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/start_serial.py", line 12, in <module>
+    save_by_type(response)
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/logs.py", line 31, in save_by_type
+    parsed_response = json.loads(response)
+  File "/usr/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.7/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 1 column 8 (char 7)
+Traceback (most recent call last):
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/start_serial.py", line 12, in <module>
+    save_by_type(response)
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/logs.py", line 31, in save_by_type
+    parsed_response = json.loads(response)
+  File "/usr/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/start_serial.py", line 10, in <module>
+    response = ser.readline().decode('utf-8').rstrip()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+{"temp/hum": "55.50/18.70"}
+{"temp/hum": "56.30/18.80"}
+{"temp/hum": "56.20/18.70"}
+Traceback (most recent call last):
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/start_serial.py", line 12, in <module>
+    save_by_type(response)
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/logs.py", line 31, in save_by_type
+    parsed_response = json.loads(response)
+  File "/usr/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.7/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/start_serial.py", line 12, in <module>
+    save_by_type(response)
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/logs.py", line 31, in save_by_type
+    parsed_response = json.loads(response)
+  File "/usr/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.7/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 8 (char 7)
+Traceback (most recent call last):
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/start_serial.py", line 3, in <module>
+    from logs import iflan_log, save_by_type
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/logs.py", line 8, in <module>
+    logging.basicConfig(filename=LOG, filemode="w", level=logging.DEBUG)  
+  File "/usr/lib/python3.7/logging/__init__.py", line 1900, in basicConfig
+    h = FileHandler(filename, mode)
+  File "/usr/lib/python3.7/logging/__init__.py", line 1092, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "/usr/lib/python3.7/logging/__init__.py", line 1121, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/logs/iflan.log'
+Traceback (most recent call last):
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/start_serial.py", line 3, in <module>
+    from logs import iflan_log, save_by_type
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/logs.py", line 8, in <module>
+    logging.basicConfig(filename=LOG, filemode="w", level=logging.DEBUG)  
+  File "/usr/lib/python3.7/logging/__init__.py", line 1900, in basicConfig
+    h = FileHandler(filename, mode)
+  File "/usr/lib/python3.7/logging/__init__.py", line 1092, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "/usr/lib/python3.7/logging/__init__.py", line 1121, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/logs/iflan.log'
+Traceback (most recent call last):
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/start_serial.py", line 3, in <module>
+    from logs import iflan_log, save_by_type
+  File "/home/pi/longibot-raspberry/web/arduino-cmds/py/logs.py", line 8, in <module>
+    logging.basicConfig(filename=LOG, filemode="w", level=logging.DEBUG)  
+  File "/usr/lib/python3.7/logging/__init__.py", line 1900, in basicConfig
+    h = FileHandler(filename, mode)
+  File "/usr/lib/python3.7/logging/__init__.py", line 1092, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "/usr/lib/python3.7/logging/__init__.py", line 1121, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/logs/iflan.log'
