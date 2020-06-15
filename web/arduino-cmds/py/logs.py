@@ -7,6 +7,7 @@ import json
 LOG = "../../logs/iflan.log"
 logging.basicConfig(filename=LOG, filemode="w", level=logging.DEBUG)  
 FILE_MAX_SIZE= 1000
+LOGS_DIR = "/home/pi/longibot-raspberry/web/logs/"
 
 # console handler  
 console = logging.StreamHandler()  
@@ -27,10 +28,14 @@ def erase_if_heavy(file_name):
 		logging.debug(parsed_datetime + ": 	NOMAL")
 
 def save_by_type(response):
-    print(response)
-    print(type(response)
-	print(json.loads(response))
-	print(parsed_response['temp/hum'])
+	parsed_response = json.loads(response)
+	if "temp/hum" in parsed_response:
+		write_into_file( "temp-hum.json" , response)
 
 
+def write_into_file(file_name, text):
+	f = open(LOGS_DIR + file_name, "w")
+	f.write(text)
+	f.close()
+	print(text)
 

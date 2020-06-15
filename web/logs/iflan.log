@@ -1,6 +1,16 @@
-DEBUG:root:2020-06-14 23:12:23: {"SERIAL": "Ready"}
-DEBUG:root:2020-06-14 23:12:23: {"SERVO": "Ready"}
-DEBUG:root:2020-06-14 23:12:23: {"SERVO": "Position: 60"}
-DEBUG:root:2020-06-14 23:12:24: {"ULTASONIC": "Ready"}
-DEBUG:root:2020-06-14 23:12:24: {"SERVO": "Ready"}
-DEBUG:root:2020-06-14 23:12:25: {"SERVO": "Ready"}
+DEBUG:root:2020-06-14 23:54:43: {"SERIAL": "Ready"}
+DEBUG:root:2020-06-14 23:54:44: {"SERVO": "Ready"}
+DEBUG:root:2020-06-14 23:54:44: {"SERVO": "Position: 60"}
+DEBUG:root:2020-06-14 23:54:44: {"ULTASONIC": "Ready"}
+DEBUG:root:2020-06-14 23:54:45: {"SERVO": "Ready"}
+DEBUG:root:2020-06-14 23:54:45: {"SERVO": "Ready"}
+DEBUG:root:2020-06-14 23:55:00: {"control": "T"}
+DEBUG:root:2020-06-14 23:55:00: {"temp/hum": "55.80/19.40"}
+DEBUG:root:2020-06-14 23:55:03: {"control": "T"}
+DEBUG:root:2020-06-14 23:55:03: {"temp/hum": "56.40/19.30"}
+DEBUG:root:2020-06-14 23:55:05: {"control": "T"}
+DEBUG:root:2020-06-14 23:55:05: {"temp/hum": "56.40/19.30"}
+DEBUG:root:2020-06-14 23:55:06: {"control": "T"}
+DEBUG:root:2020-06-14 23:55:06: {"temp/hum": "56.40/19.30"}
+DEBUG:root:2020-06-14 23:55:07: {"control": "T"}
+DEBUG:root:2020-06-14 23:55:07: {"temp/hum": "56.40/19.30"}
