@@ -337,6 +337,31 @@ header .back-button i {
     background: #ffffff;
 }
 
+.camera-container .camera-data-panel {
+    position: absolute;
+    left: 2%;
+    top: 60px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.camera-container .camera-data-panel > div {
+    color: white;
+    display: grid;
+    text-align: center;
+    font-size: .9em;
+    margin-right: 40px;
+    text-shadow: 1px 1px 0px black;
+}
+
+.camera-container .camera-data-panel i {
+    font-size: 2rem;
+    margin-bottom: .4em;
+}
+
+.camera-container .camera-data-panel span {
+
+}
 
 /************ Automatic ************/
 .automatic-container {
