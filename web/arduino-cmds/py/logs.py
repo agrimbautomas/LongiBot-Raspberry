@@ -27,10 +27,10 @@ def erase_if_heavy(file_name):
 		logging.debug(parsed_datetime + ": 	NOMAL")
 
 def save_by_type(response):
-        print(response)
-        print(type(response)
+    print(response)
+    print(type(response)
 	print(json.loads(response))
-	#print(parsed_response['temp/hum'])
+	print(parsed_response['temp/hum'])
 
 
 
