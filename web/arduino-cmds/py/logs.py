@@ -1,6 +1,7 @@
 import logging
 import datetime
 import os
+import json
 
 # logging  
 LOG = "../../logs/iflan.log"
@@ -24,3 +25,12 @@ def erase_if_heavy(file_name):
 		open(file_name, 'w').close()
 	else:
 		logging.debug(parsed_datetime + ": 	NOMAL")
+
+def save_by_type(response):
+        print(response)
+        print(type(response)
+	print(json.loads(response))
+	#print(parsed_response['temp/hum'])
+
+
+
