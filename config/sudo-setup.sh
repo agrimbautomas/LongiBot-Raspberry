@@ -21,3 +21,4 @@ sudo usermod -a -G pi www-data
 # Create startup script
 sudo cp iflan-config /etc/init.d/iflan
 sudo chmod +x /etc/init.d/iflan
+sudo update-rc.d iflan defaults
