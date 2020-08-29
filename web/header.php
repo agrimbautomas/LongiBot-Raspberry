@@ -1,3 +1,7 @@
+<?php
+require 'config.php';
+?>
+
 <html>
 <head>
     <title>iFlan</title>
@@ -60,7 +64,11 @@
 
     <nav>
         <span class="back-button" id="go-to-menu"><i class="fas fa-angle-left"></i></span>
-        <h1>iFlan</h1>
+        <h1>
+            iFlan
+            <span><?php echo RASPBERRY_IP; ?></span>
+        </h1>
+
 
         <span class="nav-right-icons">
             <i class="fas fa-code" id="serial-icon"></i>

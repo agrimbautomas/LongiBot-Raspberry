@@ -7,10 +7,15 @@ sh config/setup.sh
 
 # Create startup script in /etc/init.d/picam
 
-### Troobleshooting
-# Audio not working
+###### Troobleshooting
+### Changed your location ?
+# Update local ip on web/config RASPBERRY_IP
+
+### Audio not working ?
 # Check if the card and devices are correctly setted up in picam/start_camera.sh
 # To show current mic card and device run:
 arecord -l
 
-# Read Documentation on https://github.com/iizukanao/picam
+# Documentation on https://github.com/iizukanao/picam
+
+
