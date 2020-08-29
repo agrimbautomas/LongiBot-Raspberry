@@ -372,11 +372,20 @@ header .back-button i {
 .camera-container .camera-data-panel > div#humidity-container.more-than-eighty {
     color: #f76255;
 }
+
 .camera-container .camera-data-panel > div#humidity-container.more-than-seventy {
     color: #f97f74;
 }
+
 .camera-container .camera-data-panel > div#humidity-container.more-than-sixty {
     color: #ffbbbb;
+}
+
+.camera-container .camera-data-panel > div#temperature-container.hot {
+    color: #fb0000;
+}
+.camera-container .camera-data-panel > div#temperature-container.cold {
+    color: #53c9ee;
 }
 
 .camera-container .camera-data-panel i {
