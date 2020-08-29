@@ -1,6 +1,6 @@
-DEBUG:root:2020-06-15 14:28:57: {"SERIAL": "Ready"}
-DEBUG:root:2020-06-15 14:28:58: {"SERVO": "Ready"}
-DEBUG:root:2020-06-15 14:28:58: {"SERVO": "Position: 60"}
-DEBUG:root:2020-06-15 14:28:58: {"ULTASONIC": "Ready"}
-DEBUG:root:2020-06-15 14:28:59: {"SERVO": "Ready"}
-DEBUG:root:2020-06-15 14:28:59: {"SERVO": "Ready"}
+DEBUG:root:2020-08-29 17:36:49: {"SERIAL": "Ready"}
+DEBUG:root:2020-08-29 17:36:50: {"SERVO": "Ready"}
+DEBUG:root:2020-08-29 17:36:50: {"SERVO": "Position: 60"}
+DEBUG:root:2020-08-29 17:36:50: {"ULTASONIC": "Ready"}
+DEBUG:root:2020-08-29 17:36:51: {"SERVO": "Ready"}
+DEBUG:root:2020-08-29 17:36:51: {"SERVO": "Ready"}

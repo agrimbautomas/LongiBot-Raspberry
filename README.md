@@ -13,5 +13,4 @@ sh config/setup.sh
 # To show current mic card and device run:
 arecord -l
 
-
-
+# Read Documentation on https://github.com/iizukanao/picam
