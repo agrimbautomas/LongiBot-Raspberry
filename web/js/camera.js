@@ -82,8 +82,8 @@ function updateHumidityColor(hum) {
 }
 
 function updateTempColor(temp) {
-    if(temp > 24)
+    if(temp >= 24)
         $temperatureContainer.addClass('hot');
-    else if(temp < 21)
+    else if(temp <= 20)
         $temperatureContainer.addClass('cold');
 }
