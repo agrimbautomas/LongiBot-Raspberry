@@ -108,6 +108,13 @@ header h1 {
     font-size: 1.2rem;
 }
 
+header h1 span{
+    width: 100%;
+    display: inline-block;
+    font-size: 0.2em;
+    margin: 2px auto -4px;
+}
+
 
 header .back-button,
 header .nav-right-icons {
