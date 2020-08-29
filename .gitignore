@@ -1,3 +1,4 @@
 logs/iflan.log
 logs/temp-hum.json
 logs/serial.log
+.idea/
