@@ -1,9 +1,18 @@
 let $upCameraButton;
 let $downCameraButton;
+let $humidityData;
+let $humidityContainer;
+let $temperatureData;
+let $temperatureContainer;
 
 $(document).ready(function () {
     $upCameraButton = $('#camera-servo-move-up');
     $downCameraButton = $('#camera-servo-move-down');
+
+    $humidityData = $('#humidity-data');
+    $humidityContainer = $('#humidity-container');
+    $temperatureData = $('#temperature-data');
+    $temperatureContainer = $('#temperature-container');
 
     setupCameraPlayer();
     setupCameraButtons();
@@ -54,6 +63,24 @@ function displayTempHum(hum, temp) {
     hum = parseFloat(hum).toFixed(1);
     temp = parseFloat(temp).toFixed(1);
 
-    $('#humidity-data').html(hum + "%");
-    $('#temperature-data').html(temp + "°");
+    $humidityData.html(hum + "%");
+    $temperatureData.html(temp + "°");
+
+    updateHumidityColor(hum);
+    updateTempColor(temp);
+}
+
+function updateHumidityColor(hum) {
+    if(hum > 90)
+        $humidityContainer.addClass('more-than-ninety');
+    else if(hum > 80)
+        $humidityContainer.addClass('more-than-eighty');
+    else if(hum > 70)
+        $humidityContainer.addClass('more-than-seventy');
+    else if(hum > 60)
+        $humidityContainer.addClass('more-than-sixty');
+}
+
+function updateTempColor(temp) {
+
 }

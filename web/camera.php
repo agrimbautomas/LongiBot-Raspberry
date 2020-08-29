@@ -13,11 +13,11 @@ require 'config.php';
     </div>
 
     <div class="camera-data-panel">
-        <div>
+        <div id="humidity-container">
             <i class="fas fa-tint"></i>
             <span id="humidity-data"></span>
         </div>
-        <div>
+        <div id="temperature-container">
             <i class="fas fa-thermometer-half"></i>
             <span id="temperature-data"></span>
         </div>

@@ -361,6 +361,24 @@ header .back-button i {
     text-shadow: 1px 1px 0px black;
 }
 
+.camera-container .camera-data-panel > div#humidity-container {
+    color: #53c9ee;
+}
+
+.camera-container .camera-data-panel > div#humidity-container.more-than-ninety {
+    color: #fb0000;
+}
+
+.camera-container .camera-data-panel > div#humidity-container.more-than-eighty {
+    color: #f76255;
+}
+.camera-container .camera-data-panel > div#humidity-container.more-than-seventy {
+    color: #f97f74;
+}
+.camera-container .camera-data-panel > div#humidity-container.more-than-sixty {
+    color: #ffbbbb;
+}
+
 .camera-container .camera-data-panel i {
     font-size: 2rem;
     margin-bottom: .4em;
